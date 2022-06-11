@@ -1,0 +1,50 @@
+:root {
+  --primero: #666ca3;
+  --segundo: #13183f;
+  --tercero: #83869a;
+  --cuarto: #f74780;
+  --quinto: #ffa7c3;
+  --blanco: #ffffff;
+  --linear-naranja: hsl(322°, 87%, 55% 13°, 100%, 64%);
+  --linear-violeta: hsl(237°, 100%, 64% 322°, 87%, 55%);
+
+  /* ========== FONT FAMILY ==========*/
+  --font-Jakarta: 'Plus Jakarta Sans', sans-serif;
+}
+html {
+  font-size: 62.5%; /*10px*/
+}
+body {
+  font-family: var(--font-Jakarta);
+  background-color: var(--blanco);
+}
+.main {
+  width: 100%;
+}
+.header {
+}
+.header__img {
+}
+.header__nav {
+}
+.header__paragraph {
+}
+.header__title {
+}
+.nav__button {
+  color: var(--blanco);
+  background: var(--segundo);
+  float: right;
+  width: 148px;
+  height: 48px;
+  border-radius: 28px;
+}
+.nav__button--text {
+  font-size: 1.8rem;
+}
+.nav__h1 {
+  color: var(--segundo);
+  font-size: 1.8rem;
+  font-weight: 800;
+  float: left;
+}
