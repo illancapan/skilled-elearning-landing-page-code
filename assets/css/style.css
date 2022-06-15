@@ -5,8 +5,8 @@
   --cuarto: #f74780;
   --quinto: #ffa7c3;
   --blanco: #ffffff;
-  --linear-naranja: hsl(322°, 87%, 55% 13°, 100%, 64%);
-  --linear-violeta: hsl(237°, 100%, 64% 322°, 87%, 55%);
+  --linear-naranja: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  --linear-violeta: linear-gradient(to bottom, #4851ff, #f02aa6);
 
   /* ========== FONT FAMILY ==========*/
   --font-Jakarta: 'Plus Jakarta Sans', sans-serif;
@@ -25,6 +25,8 @@ body {
   width: 100%;
 }
 .header__img {
+  width: 92.7vw;
+  margin: 1.2rem;
 }
 .header__nav {
   display: flex;
@@ -74,8 +76,28 @@ body {
 }
 
 .nav__button--gradient {
-  background-color: var(--linear-naranja);
+  background: var(--linear-naranja);
   width: 167px;
-  top: calc(50% - 26px / 2);
+  margin-left: 1rem;
   border-radius: 31.5px;
+}
+.nav__button--text--gradient {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--blanco);
+  padding: 16px 37px;
+  line-height: 2.6rem;
+}
+
+.section__pop {
+  background: var(--linear-naranja);
+  width: 92.7vw;
+  margin: 1.6rem;
+  border-radius: 1rem;
+}
+.section__pop--text {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 3.2rem;
+  padding: 2.8rem;
 }
