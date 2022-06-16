@@ -7,37 +7,48 @@
   --blanco: #ffffff;
   --linear-naranja: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
   --linear-violeta: linear-gradient(to bottom, #4851ff, #f02aa6);
+  --linear-rectangle: linear-gradient(180deg, #FFFFFF, #F0F1FF);
 
   /* ========== FONT FAMILY ==========*/
   --font-Jakarta: 'Plus Jakarta Sans', sans-serif;
 }
+
 html {
-  font-size: 62.5%; /*10px*/
+  font-size: 62.5%;
+  /*10px*/
 }
+
 body {
   font-family: var(--font-Jakarta);
   background-color: var(--blanco);
 }
+
 .main {
   width: 100%;
 }
+
 .header {
   width: 100%;
 }
+
 .header__img {
   width: 92.7vw;
   margin: 1.2rem;
 }
+
 .header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 92.7vw; /* -- 343px MOBILE -- */
+  width: 92.7vw;
+  /* -- 343px MOBILE -- */
   margin: 1.6rem;
 }
+
 .header__paragraph {
   color: var(--tercero);
-  width: 92.7vw; /* -- 343px MOBILE -- */
+  width: 92.7vw;
+  /* -- 343px MOBILE -- */
   margin: 1rem;
   padding: 0.6rem;
   font-size: 1.6rem;
@@ -45,29 +56,35 @@ body {
   line-height: 126%;
   text-align: left;
 }
+
 .header__title {
   font-size: 4rem;
   font-weight: 800;
   line-height: 5.4rem;
   color: var(--segundo);
-  width: 92.7vw; /* -- 343px MOBILE -- */
+  width: 92.7vw;
+  /* -- 343px MOBILE -- */
   margin: 1rem;
   padding: 0.6rem;
   vertical-align: top;
   /* letter-spacing: rem; */
 }
+
 .nav__button {
   color: var(--blanco);
   background: var(--segundo);
   float: right;
-  width: 167px;
-  height: 48px;
-  border-radius: 28px;
+  width: 16.7rem;
+  /*167px*/
+  height: 4.8rem;
+  border-radius: 2.8rem;
 }
+
 .nav__button--text {
   font-size: 1.6rem;
   font-weight: 700;
 }
+
 .nav__h1 {
   color: var(--segundo);
   font-size: 2.6rem;
@@ -79,8 +96,9 @@ body {
   background: var(--linear-naranja);
   width: 167px;
   margin-left: 1rem;
-  border-radius: 31.5px;
+  border-radius: 3.15rem;
 }
+
 .nav__button--text--gradient {
   font-size: 1.6rem;
   font-weight: 700;
@@ -89,15 +107,114 @@ body {
   line-height: 2.6rem;
 }
 
+.section {
+  width: 100%;
+  /* height: auto; */
+  background: var(--linear-rectangle);
+  padding-bottom: 8rem;
+}
+
 .section__pop {
   background: var(--linear-naranja);
   width: 92.7vw;
   margin: 1.6rem;
   border-radius: 1rem;
 }
+
 .section__pop--text {
   font-size: 2.8rem;
   font-weight: 800;
   line-height: 3.2rem;
   padding: 2.8rem;
+}
+
+.section__block {
+  width: 92.7vw;
+  margin: 1.6rem 1.6rem 0rem 1.6rem;
+  /* background: var(--blanco); */
+}
+
+.section__article {
+  width: 92.7vw;
+  /* margisn: 5.6rem; */
+  padding: 2.8rem;
+  background: var(--blanco);
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  border-radius: 10px;
+  /* top: calc(50% - 25px/2 - 49px); */
+}
+
+.section__icon {
+  width: 5.6rem;
+  margin-left: 2.8rem;
+  margin-bottom: -2.8rem;
+}
+
+.section__title {
+  color: var(--segundo);
+  /* margin: 5.6rem 21.4rem 1.6rem 2.8rem; */
+  padding-top: 2.8rem;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.section__paragraph {
+  color: var(--tercero);
+  margin-top: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.section__link {
+  color: var(--cuarto);
+  margin-top: 2.8rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.footer {
+  width: 100%;
+  height: 12rem;
+  background: var(--segundo);
+}
+
+.footer__block {
+  display: flex;
+  width: 92.7%;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  margin: 3.6rem 1.6rem;
+}
+
+.footer__title {
+  width: 100%;
+  color: var(--blanco);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+}
+
+.footer__title--gradient {
+  background: var(--linear-violeta);
+  width: 25rem;
+  /*167px*/
+  height: 4.8rem;
+  border-radius: 2.8rem;
+}
+
+.footer__title--text--gradient {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  /* margin: 2.4rem; */
+  /* margin: 1.1rem 2.4rem 0.9rem 2.4rem; */
 }
